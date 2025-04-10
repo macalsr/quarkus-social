@@ -1,19 +1,16 @@
 package io.github.mariacsr.quarkussocial.domain.model;
 
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Getter
-@Setter
+@Data
 @Builder
-@RequiredArgsConstructor
-@Table(name = "users")
 @AllArgsConstructor
-public class User extends PanacheEntityBase {
+@NoArgsConstructor
+@Table(name = "users")
+public class User {
 
     @Id
     @SequenceGenerator(name = "users_seq")
@@ -25,6 +22,4 @@ public class User extends PanacheEntityBase {
 
     @Column(nullable = false)
     private Integer age;
-
-
 }
