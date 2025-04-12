@@ -1,7 +1,7 @@
 package io.github.mariacsr.quarkussocial.rest;
 
 import io.github.mariacsr.quarkussocial.domain.model.User;
-import io.github.mariacsr.quarkussocial.domain.reposity.UserRepository;
+import io.github.mariacsr.quarkussocial.domain.repository.UserRepository;
 import io.github.mariacsr.quarkussocial.rest.dto.CreateUserRequest;
 import io.github.mariacsr.quarkussocial.rest.dto.ResponseError;
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
